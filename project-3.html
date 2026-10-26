@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen Formulir</title>
+  </head>
+  <body>
+    <form action="" method="POST">
+      <p>
+        <label for="nama">Nama:</label><br>
+        <input type="text" name="nama" id="nama">
+      </p>
+      
+      <p>
+        <label for="tgl_lahir">Tgl Lahir:</label><br>
+        <input type="date" name="tgl_lahir" id="tgl_lahir">
+      </p>
+      
+      <p>
+        <label for="nim">NIM:</label><br>
+        <input type="number" name="nim" id="nim">
+      </p>
+      
+      <p>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password">
+      </p>
+      
+      <fieldset>
+        <legend>FAKULTAS</legend>
+        <input type="checkbox" name="fakultas[]" value="FTI" id="fti"> <label for="fti">FTI</label><br>
+        <input type="checkbox" name="fakultas[]" value="FAI" id="fai"> <label for="fai">FAI</label><br>
+        <input type="checkbox" name="fakultas[]" value="FP" id="fp"> <label for="fp">FP</label><br>
+        <input type="checkbox" name="fakultas[]" value="FE" id="fe"> <label for="fe">FE</label><br>
+        <input type="checkbox" name="fakultas[]" value="FAPERTA" id="faperta"> <label for="faperta">FAPERTA</label><br>
+      </fieldset>
+      
+      <p>
+        <label for="gender">Gender:</label><br>
+        <select name="gender" id="gender">
+          <option value="m">Pria</option>
+          <option value="f" selected>Wanita</option>
+        </select>
+      </p>
+      
+      <p>
+        <input type="submit" value="Kirimkan">
+        <input type="reset" value="Reset">
+      </p>
+    </form>
+  </body>
+</html>
